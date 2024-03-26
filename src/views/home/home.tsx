@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { PrimaryButton } from '../../components/buttons/primaryButton';
 
 export const HomeView: React.FunctionComponent = () => {
   return (
@@ -15,12 +16,7 @@ export const HomeView: React.FunctionComponent = () => {
             Click the button below to get the computer to start guessing what it
             is.
           </p>
-          <button
-            className='px-4 py-2 text-sm shadow bg-sky-100 shadow-sky-600 text-sky-700 
-      hover:bg-sky-600 hover:text-sky-100 rounded-md'
-          >
-            Start guessing
-          </button>
+          <PrimaryButton text='Start guessing' onClick={() => {}} />
         </div>
       </div>
     </div>
