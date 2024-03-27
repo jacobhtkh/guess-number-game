@@ -19,12 +19,17 @@ export const GuessNumberCard: React.FunctionComponent<GuessNumberCardProps> = ({
   const intialMaxNumberToGuessBetween = maxNumberToGuessBetween;
 
   const [hasGameStarted, setHasGameStarted] = useState(false);
+
   const [hasWonGame, setHasWonGame] = useState(false);
+
   const [currentMinNumberToGuessBetween, setCurrentMinNumberToGuessBetween] =
     useState(intialMinNumberToGuessBetween);
+
   const [currentMaxNumberToGuessBetween, setCurrentMaxNumberToGuessBetween] =
     useState(intialMaxNumberToGuessBetween);
+
   const [currentGuess, setCurrentGuess] = useState<number | null>(null);
+
   const [correctGuess, setCorrectGuess] = useState<number | null>(null);
 
   useEffect(() => {
@@ -99,7 +104,10 @@ export const GuessNumberCard: React.FunctionComponent<GuessNumberCardProps> = ({
   }
 
   return (
-    <div className='max-w-md border border-solid rounded-md border-sky-600 shadow-md shadow-sky-600'>
+    <div
+      data-qa={'guess-number-card'}
+      className='max-w-md border border-solid rounded-md border-sky-600 shadow-md shadow-sky-600'
+    >
       <div className='px-6 py-4 text-center'>
         {!hasGameStarted ? (
           <div className='mb-5'>
