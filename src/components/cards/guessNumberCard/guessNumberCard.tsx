@@ -124,7 +124,7 @@ export const GuessNumberCard: React.FunctionComponent<GuessNumberCardProps> = ({
           </div>
         ) : (
           <div className='mb-5'>
-            <h2 className='mb-3 text-xl font-semibold tracking-tight text-sky-600'>
+            <h2 className='mb-2 text-xl font-semibold tracking-tight text-sky-600'>
               {!hasWonGame
                 ? `Guessing your number between ${minNumberToGuessBetween} and ${maxNumberToGuessBetween}`
                 : `Congratulations! Your guess of ${correctGuess} was correct!`}
